@@ -16,9 +16,9 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "git@github.com:AgoraIO/AgoraLite_iOS", .upToNextMinor(from: "4.5.3")),
-        .package(url: "git@github.com:daltoniam/Starscream.git", .upToNextMinor(from: "4.0.8")),
-        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.8.0"))
+        .package(url: "https://github.com/AgoraIO/AgoraLite_iOS.git", .upToNextMinor(from: "4.5.3")),
+        .package(url: "https://github.com/daltoniam/Starscream.git", .upToNextMinor(from: "4.0.8")),
+        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.8.1"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -36,7 +36,7 @@ let package = Package(
                           ]
         ),
         .binaryTarget(name: "videoRecordingComponent",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKVideoRecordingComponent/2.8.0/videoRecordingComponent.zip",
-        checksum: "2a81e718bf7c4e3c8d1af35c029717f78d77b0aef6aee3e67cedb4ebc88fcae1"),
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKVideoRecordingComponent/2.8.1/videoRecordingComponent.zip",
+        checksum: "3456046b87ba52eebc392e07f1ec04ee62cc0dddad73fdd2b3184fd259dec537"),
     ]
 )
