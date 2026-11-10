@@ -17,8 +17,9 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/AgoraIO/AgoraLite_iOS.git", .upToNextMinor(from: "4.5.3")),
+        .package(url: "https://github.com/AgoraIO/AgoraInfra_iOS.git", .exactItem("1.3.7")),
         .package(url: "https://github.com/daltoniam/Starscream.git", .upToNextMinor(from: "4.0.8")),
-        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.8.1"))
+        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.12.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -36,7 +37,7 @@ let package = Package(
                           ]
         ),
         .binaryTarget(name: "videoRecordingComponent",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKVideoRecordingComponent/2.8.7/videoRecordingComponent.zip",
-        checksum: "f0f13a89f5dfbddbd61d5e5c615fa48fa0682672593fd27f1fbbe3d165b94237"),
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKVideoRecordingComponent/2.12.1/videoRecordingComponent.zip",
+        checksum: "7e2107ee15fc0b1e38c3c3e89aee053c8716b2991118d729f9bf26d72bc0c527"),
     ]
 )
